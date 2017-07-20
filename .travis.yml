@@ -1,6 +1,6 @@
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install -y build-essential pkg-config libgd-perl 
+  - sudo apt-get install -y build-essential pkg-config libgd3 libgd-perl 
   - cpanm -v --installdeps --notest .
 language: perl
 perl:
