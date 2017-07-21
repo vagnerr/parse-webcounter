@@ -1,9 +1,12 @@
 before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y build-essential pkg-config libgd3 libgd-dev libgd-perl 
+- sudo apt-get -qq update
+- sudo apt-get install -y build-essential pkg-config libgd3 libgd-dev libgd-perl
 language: perl
 perl:
-  - "5.24"
-  - "5.22"
-  - "5.20"
-  - "5.14"
+- '5.24'
+- '5.22'
+- '5.20'
+- '5.14'
+notifications:
+  slack:
+    secure: R+bPGPIHMV6ZVeFQn+ChjKzcSypkv0nIZJKbjJktInsBq3WuTR8D5AR8cBDBSE0QBm+OeJVxEEHCL5GKiJWPtqz7i6FOGhVuGTw+9iyU19gQN8GGsvWJ6Lnnno++6cWa17H77AoxZfFwVJtMCBOBl89QrJ4JypUrb9stQ7R7f/RP4YRvIuD0CFZLJc0W93kyVqvgXqAYChTxNZpa2GqfYKhHDkPljNuqgiGM4bZ9LBMDzC1dSFOWB0NV6Cx+9hdhE1JT7ALstChyCF7YWzQOP59wd92M07+A/lxoKgEW+RyuMvb+Ghy/SnPAuBuiIsU++wn1Yb8cfPCTuxy+8Y4I0ZgPyqUnO6Mk2OaoWYpZEJdKkTo/TPiWqhddMum0Uaioet71YJ0eD6hN5nIvepoCU8DS8No28lAgVvBcAZYsK/bFrisThirhN5XLV1v7wIVfZDQAvmS/apDEk7iHQrSj9dD5HYCRIFhhmRBKJK2X3ZpYqymuHh1r2LFvwK7ZxU6MIUGUmIaqDiX+VZmDYIV07fMz2qY6elzI9/Fs54OX9A+cx8NeBZKLb71Rv2WJSTsLzGVw2VakG6wo/P+9eRyoN7SZMQ+8iK9KCNdM3yLLPhH+KDgOVrsaneOorhhabZjSt1KXXJixK8kla/IB13WDOPeXvCctoiGPCg20JdIodMw=
